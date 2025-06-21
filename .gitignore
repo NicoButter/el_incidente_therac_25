@@ -1,0 +1,24 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuraciones de editor/IDE comunes
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs y bases de datos temporales
+*.log
+*.sqlite3
