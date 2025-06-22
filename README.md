@@ -1,9 +1,3 @@
-# 💥 Therac‑25: Cuando el software mata
-
-> 📚 Trabajo final para la materia **Gestión de Proyectos de Software**  
-> 🎓 Carrera: **Licenciatura en Sistemas**  
-> 🏫 **Universidad Nacional de la Patagonia Austral (UNPA)** – Año 2025
-
 ---
 
 <p align="center">
@@ -11,6 +5,12 @@
 </p>
 
 ---
+
+# 💥 Therac‑25: Cuando el software mata
+
+> 📚 Presentación final para la materia **Gestión de Proyectos de Software**  
+> 🎓 Carrera: **Licenciatura en Sistemas**  
+> 🏫 **Universidad Nacional de la Patagonia Austral** – Año 2025
 
 ## 🎯 Descripción
 
@@ -33,7 +33,7 @@ Este proyecto es una **presentación interactiva construida con Angular 20**, qu
 - 🐧 **Sistema operativo:** openSUSE Tumbleweed
 - 🎧 **Música de fondo:** Clementine + buena onda
 
-> 💻 Desarrollado íntegramente en mi **Victos 16** con Linux, como tiene que ser 😉
+> 💻 Desarrollado íntegramente en mi **Victus 16** con Linux, como tiene que ser 😉
 
 ---
 
@@ -97,6 +97,21 @@ ng serve
 - 📄 Informe oficial de la FDA (1987)
 - 📺 [Video explicativo – “El software que te mataba”](https://www.youtube.com/watch?v=v5mfyj0S2Ss)
 
+## 👨‍💻 Autor
+
+**Nicolás Butterfield**  
+Desarrollador entusiasta del software seguro y libre.  
+**UNPA - Lic. en Sistemas** – 2025  
+📧 nicobutter@gmail.com  
+🧠 Linux user – 🧃 Clementine fan – 🧰 Builder of bugs (a veces).
+
+---
+
+## 🪪 Licencia
+
+Este proyecto está bajo la licencia **MIT**.  
+Podés usarlo, compartirlo y mejorarlo, siempre con conciencia crítica sobre el impacto del software.
+
 ---
 
 ## 🧠 Frase final + guiño gamer
@@ -109,22 +124,5 @@ ng serve
 
 > 🎮 *“War... war never changes.”* – Fallout  
 > 🕹️ Porque hasta en los videojuegos, sabemos que una mala decisión de diseño... mata.
-
----
-
-## 👨‍💻 Autor
-
-**Nicolás Butter**  
-Desarrollador entusiasta del software seguro y libre.  
-**UNPA - Lic. en Sistemas** – 2025  
-📧 nicobutter@gmail.com  
-🧠 Linux user – 🧃 Clementine fan – 🧰 Builder of bugs (a veces).
-
----
-
-## 🪪 Licencia
-
-Este proyecto está bajo la licencia **MIT**.  
-Podés usarlo, compartirlo y mejorarlo, siempre con conciencia crítica sobre el impacto del software.
 
 ---
