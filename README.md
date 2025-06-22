@@ -1,7 +1,7 @@
 ---
 
 <p align="center">
-  <img src="src/assets/images/unpa-logo.png" alt="Logo UNPA" height="100" />
+  <img src="img/unpa-logo.png" alt="Logo UNPA" height="100" />
 </p>
 
 ---
