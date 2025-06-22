@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Slide } from '../slide.model';
+import { Slide } from '../models/slide';
 
 @Component({
   selector: 'app-slide',

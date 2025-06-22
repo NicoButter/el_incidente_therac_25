@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Slide } from './slide.model';
+import { Slide } from '../models/slide';
 
 @Injectable({
   providedIn: 'root'
