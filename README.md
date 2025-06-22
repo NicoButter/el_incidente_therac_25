@@ -40,16 +40,36 @@ Este proyecto es una **presentación interactiva construida con Angular 20**, qu
 ## 📁 Estructura del proyecto
 
 ```text
-therac25-presentacion/
+EL_INCIDENTE_THERAC_25/
+├── .angular/
+├── .vscode/
+├── node_modules/
+├── public/
 ├── src/
 │   ├── app/
-│   │   ├── cover/             # Diapositiva de portada
-│   │   ├── slide/             # Componente de cada diapositiva
-│   │   └── assets/images/     # Imágenes y logos
-│   ├── styles/
-│   │   └── slide-styles.css
-│   ├── app.component.ts/html  # Contenedor principal
+│   │   ├── cover/             # Portada de la presentación
+│   │   ├── models/            # Interfaces y estructuras de datos
+│   │   ├── presentation/      # Lógica de navegación de slides
+│   │   ├── services/          # Servicios de lógica
+│   │   ├── slide/             # Componente para cada diapositiva
+│   │   ├── app.config.ts
+│   │   ├── app.css
+│   │   ├── app.html
+│   │   ├── app.routes.ts
+│   │   ├── app.spec.ts
+│   │   └── app.ts
+│   ├── assets/
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── .editorconfig
+├── .gitignore
 ├── angular.json
+├── package.json
+├── package-lock.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
 └── README.md
 ```
 
