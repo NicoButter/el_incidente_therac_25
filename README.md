@@ -134,7 +134,7 @@ Podés usarlo, compartirlo y mejorarlo, siempre con conciencia crítica sobre el
 
 ---
 
-## 🧠 Frase final + guiño gamer
+## 🧠
 
 > *“El software debe fallar de forma segura... o no merece estar en producción.”*
 
