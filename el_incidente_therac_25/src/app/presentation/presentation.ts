@@ -12,11 +12,12 @@ import { SlideComponent } from '../slide/slide';
   templateUrl: './presentation.html',
   styleUrls: ['./presentation.css']
 })
-export class PresentationComponent implements OnInit {
+export class Presentation implements OnInit {
+  showNav = false;
   slides: Slide[] = [];
   currentSlide = 0;
 
-  constructor(private slideService: SlideService) {}
+  constructor(private slideService: SlideService) { }
 
   ngOnInit(): void {
     this.slides = this.slideService.getSlides();

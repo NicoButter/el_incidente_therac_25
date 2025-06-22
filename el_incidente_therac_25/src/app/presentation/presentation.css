@@ -1,7 +1,8 @@
 .presentation-container {
   width: 100%;
-  max-width: 1200px;
-  height: 675px;
+  height: 100%;
+  /* max-width: 1200px;
+  height: 675px; */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -11,15 +12,93 @@
 
 .navigation {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
+  /* Ajusta este valor según te guste */
   left: 50%;
   transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
+.navigation.show-navigation {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Span central */
 .navigation span {
-  color: #333;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  /* Un poco más arriba que los botones */
+  transform: translateX(-50%);
+  font-size: 1rem;
   font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Botón izquierdo */
+.navigation .btn-prev {
+  margin-right: auto;
+}
+
+/* Botón derecho */
+.navigation .btn-next {
+  margin-left: auto;
+}
+
+/* Estilo general de botones */
+.navigation button {
+  position: relative;
+  z-index: 2;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Hover */
+.navigation button:hover:not([disabled]) {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Disabled */
+.navigation button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.navigation {
+  animation: fadeIn 0.6s ease-in;
 }

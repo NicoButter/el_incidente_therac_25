@@ -11,4 +11,14 @@ import { Slide } from '../models/slide';
 })
 export class SlideComponent {
   @Input() slide!: Slide;
+
+  get contentParagraphs(): string[] {
+    if (this.slide.paragraphs && this.slide.paragraphs.length > 0) {
+      return this.slide.paragraphs;
+    }
+    if (this.slide.text) {
+      return [this.slide.text];
+    }
+    return [];
+  }
 }

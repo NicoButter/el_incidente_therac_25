@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cover',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './cover.html',
   styleUrls: ['./cover.css']
 })
-export class CoverComponent {}
+export class CoverComponent {
+  @Output() iniciar = new EventEmitter<void>();
+
+  comenzar() {
+    this.iniciar.emit();
+  }
+}

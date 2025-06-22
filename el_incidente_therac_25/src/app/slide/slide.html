@@ -1,12 +1,43 @@
-<div class="slide">
+<div
+  class="slide"
+  [style.background-image]="'url(' + (slide.backgroundUrl || 'assets/img/default-bg.jpg') + ')'"
+>
   <h2>{{ slide.title }}</h2>
+
   <div class="content">
+    <!-- Párrafos -->
     <div class="text">
-      <p>{{ slide.text }}</p>
-    </div>
-    <div class="image">
-      <img *ngIf="slide.imageUrl" [src]="slide.imageUrl" alt="Slide image" />
-      <p *ngIf="!slide.imageUrl">[Espacio para imagen]</p>
+  <!-- Mostrar 'text' SIEMPRE que exista -->
+  <p *ngIf="slide.text" class="paragraph-animate">
+    {{ slide.text }}
+  </p>
+
+  <!-- Mostrar párrafos -->
+  <ng-container *ngIf="slide.paragraphs && slide.paragraphs.length > 0">
+    <ng-container *ngFor="let paragraph of slide.paragraphs; let i = index">
+      <p
+        *ngIf="paragraph"
+        class="paragraph-animate"
+        [style.animation-delay]="'0.' + i + 's'"
+      >
+        {{ paragraph }}
+      </p>
+    </ng-container>
+  </ng-container>
+</div>
+
+    <!-- Imágenes -->
+    <div class="images">
+      <ng-container *ngFor="let img of slide.images">
+        <div class="image-wrapper">
+          <img *ngIf="img" [src]="img" alt="Slide image" />
+        </div>
+      </ng-container>
     </div>
   </div>
+
+  <!-- Pie de página -->
+  <footer class="slide-footer" *ngIf="slide.footerText">
+    {{ slide.footerText }}
+  </footer>
 </div>
