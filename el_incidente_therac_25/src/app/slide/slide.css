@@ -1,62 +1,3 @@
-/* .slide {
-  position: relative;
-  width: 100%;
-  min-height: 90vh;
-  padding: 2rem;
-  box-sizing: border-box;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.images {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  min-width: 200px;
-}
-
-.images img {
-  max-width: calc(50% - 1rem);
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.slide-footer {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-} */
-
 .slide {
   position: relative;
   width: 95vw;
@@ -136,10 +77,10 @@
 .image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px; /* ajustable */
-  aspect-ratio: 4 / 3; /* define la relación sin usar padding-top */
+  max-width: 500px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  margin: 0 auto; /* centra el wrapper */
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +89,7 @@
 .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* muestra toda la imagen sin recorte */
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -170,17 +111,6 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-
-/* .images img {
-  width: calc(50% - 0.5rem);
-  height: 200px;
-  object-fit: cover; 
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-.images img:hover {
-  transform: scale(1.05);
-} */
 
 /* Pie de página */
 .slide-footer {
