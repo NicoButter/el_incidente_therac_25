@@ -67,11 +67,25 @@
   color: white;
   background-size: cover;
   background-position: center;
-  background-color: #111; /* Fallback si no hay imagen */
+  background-color: #111;
+  /* Fallback si no hay imagen */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  z-index: 0;
+}
+
+.slide>* {
+  position: relative;
+  z-index: 1;
 }
 
 /* Título del slide */
@@ -106,7 +120,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.8rem 1rem;
   border-radius: 6px;
-  color: white; /* 👈 Añade esta línea */
+  color: white;
+  white-space: pre-line;
 }
 
 .images {
@@ -120,23 +135,40 @@
 
 .image-wrapper {
   position: relative;
-  width: calc(50% - 0.5rem);
-  padding-top: 75%; /* 4:3 */
+  width: 100%;
+  max-width: 500px; /* ajustable */
+  aspect-ratio: 4 / 3; /* define la relación sin usar padding-top */
   overflow: hidden;
+  margin: 0 auto; /* centra el wrapper */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* muestra toda la imagen sin recorte */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.4rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* .images img {
@@ -167,6 +199,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

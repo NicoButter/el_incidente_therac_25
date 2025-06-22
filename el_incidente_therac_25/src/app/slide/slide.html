@@ -1,6 +1,6 @@
 <div
   class="slide"
-  [style.background-image]="'url(' + (slide.backgroundUrl || 'assets/img/default-bg.jpg') + ')'"
+  [style.background-image]="'url(' + (slide.backgroundUrl || 'assets/img/slides_background.png') + ')'"
 >
   <h2>{{ slide.title }}</h2>
 
@@ -31,6 +31,7 @@
       <ng-container *ngFor="let img of slide.images">
         <div class="image-wrapper">
           <img *ngIf="img" [src]="img" alt="Slide image" />
+          <div class="image-caption">El acelerador Therac-25 (1983-1987)</div>
         </div>
       </ng-container>
     </div>

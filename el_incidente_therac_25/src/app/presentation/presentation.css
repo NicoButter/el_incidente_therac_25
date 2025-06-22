@@ -12,21 +12,20 @@
 
 .navigation {
   position: absolute;
-  bottom: 15px;
-  /* Ajusta este valor según te guste */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 800px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 2rem;
   box-sizing: border-box;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
+
 
 .navigation.show-navigation {
   opacity: 1;
@@ -38,7 +37,6 @@
   position: absolute;
   left: 50%;
   bottom: 5px;
-  /* Un poco más arriba que los botones */
   transform: translateX(-50%);
   font-size: 1rem;
   font-weight: bold;
