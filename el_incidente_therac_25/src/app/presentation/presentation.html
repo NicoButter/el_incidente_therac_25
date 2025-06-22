@@ -1,0 +1,9 @@
+<div class="presentation-container">
+  <app-cover *ngIf="currentSlide === 0"></app-cover>
+  <app-slide *ngIf="currentSlide > 0" [slide]="slides[currentSlide - 1]"></app-slide>
+  <div class="navigation">
+    <button class="btn btn-primary" [disabled]="currentSlide === 0" (click)="previousSlide()">Anterior</button>
+    <span>Diapositiva {{ currentSlide + 1 }} de {{ slides.length + 1 }}</span>
+    <button class="btn btn-primary" [disabled]="currentSlide === slides.length" (click)="nextSlide()">Siguiente</button>
+  </div>
+</div>

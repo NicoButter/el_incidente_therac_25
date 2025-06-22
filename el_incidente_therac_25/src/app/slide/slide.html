@@ -1,0 +1,12 @@
+<div class="slide">
+  <h2>{{ slide.title }}</h2>
+  <div class="content">
+    <div class="text">
+      <p>{{ slide.text }}</p>
+    </div>
+    <div class="image">
+      <img *ngIf="slide.imageUrl" [src]="slide.imageUrl" alt="Slide image" />
+      <p *ngIf="!slide.imageUrl">[Espacio para imagen]</p>
+    </div>
+  </div>
+</div>

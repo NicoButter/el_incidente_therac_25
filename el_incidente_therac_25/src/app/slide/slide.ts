@@ -1,0 +1,14 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Slide } from '../slide.model';
+
+@Component({
+  selector: 'app-slide',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './slide.html',
+  styleUrls: ['./slide.css']
+})
+export class SlideComponent {
+  @Input() slide!: Slide;
+}

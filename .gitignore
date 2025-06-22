@@ -1,0 +1,38 @@
+Node.js
+
+node_modules/ npm-debug.log* yarn-error.log* package-lock.json
+
+Angular build output
+
+dist/ dist-ssr/
+
+Editor and IDE files
+
+.vscode/ .idea/ *.suo .ntvs*.njsproj *.sln *.swp
+
+Operating system files
+
+.DS_Store Thumbs.db
+
+TypeScript
+
+*.tsbuildinfo
+
+Logs
+
+logs/ .log npm-debug.logyarn-debug.log* yarn-error.log*
+
+Environment variables
+
+.env .env.local .env.development.local .env.test.local .env.production.local
+
+Test coverage
+
+coverage/
+
+Temporary files
+
+*.tmp *.temp *.bak
+
+Angular CLI cache
+
