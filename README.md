@@ -139,7 +139,7 @@ Podés usarlo, compartirlo y mejorarlo, siempre con conciencia crítica sobre el
 > *“El software debe fallar de forma segura... o no merece estar en producción.”*
 
 <p align="center">
-  <img src="src/assets/images/epic-quote.png" alt="Epic gamer quote" width="60%" />
+  <img src="img/fallout.png" alt="Epic gamer quote" width="60%" />
 </p>
 
 > 🎮 *“War... war never changes.”* – Fallout  
