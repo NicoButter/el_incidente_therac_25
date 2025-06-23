@@ -88,8 +88,8 @@ EL_INCIDENTE_THERAC_25/
 1. Cloná el repo:
 
 ```bash
-git clone https://github.com/tu_usuario/therac25-presentacion.git
-cd therac25-presentacion
+git clone https://github.com/nicobutter/el_incidente_therac_25.git
+cd el_incidente_therac_25
 ```
 
 2. Instalá las dependencias:
