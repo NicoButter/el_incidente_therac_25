@@ -1,8 +1,15 @@
 .slide {
+
+  min-height: 95vh;
+  height: auto;
+  max-height: none;
+  overflow-y: auto;
+
+
   position: relative;
   width: 95vw;
   /* min-height: 90vh;*/
-  height: 95vh;
+  /* height: 95vh; */
   padding: 2rem;
   box-sizing: border-box;
   color: white;
@@ -55,8 +62,9 @@
 }
 
 .text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: clamp(1.4em, 4vw, 1.3rem);
+  /* font-size: 1.1rem; */
+  line-height: 1;
   margin-bottom: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.8rem 1rem;
@@ -76,22 +84,32 @@
 
 .image-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  aspect-ratio: auto;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   margin: 0 auto;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  object-fit: contein;
+  display: block;
 }
 
 .image-wrapper img:hover {
@@ -100,16 +118,38 @@
 }
 
 .image-caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.4rem;
-  background: rgba(0, 0, 0, 0.6);
+  margin-top: 0.5rem;
   color: white;
-  font-size: 0.8rem;
-  text-align: center;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  overflow: auto; /* Permite scroll suave si la imagen es muy grande */
+}
+
+.image-overlay img {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+  animation: fadeInZoom 0.4s ease-in-out;
 }
 
 /* Pie de página */
@@ -153,5 +193,16 @@
 
   .images img {
     width: 100%;
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

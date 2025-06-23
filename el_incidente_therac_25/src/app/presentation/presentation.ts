@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SlideService } from '../services/slide';
 import { Slide } from '../models/slide';
@@ -33,5 +33,22 @@ export class Presentation implements OnInit {
     if (this.currentSlide > 0) {
       this.currentSlide--;
     }
+  }
+
+  // Escuchar teclas globalmente
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent): void {
+    switch (event.key) {
+      case 'ArrowRight':
+        this.nextSlide();
+        break;
+      case 'ArrowLeft':
+        this.previousSlide();
+        break;
+      default:
+        return;
+    }
+
+    event.preventDefault();
   }
 }

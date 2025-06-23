@@ -30,8 +30,10 @@
     <div class="images">
       <ng-container *ngFor="let img of slide.images">
         <div class="image-wrapper">
-          <img *ngIf="img" [src]="img" alt="Slide image" />
-          <div class="image-caption">El acelerador Therac-25 (1983-1987)</div>
+          <img *ngIf="img.url" [src]="img.url" alt="Slide image" />
+          <div class="image-caption" *ngIf="img.caption">
+            {{ img.caption }}
+          </div>
         </div>
       </ng-container>
     </div>
