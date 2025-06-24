@@ -564,7 +564,7 @@ export class SlideService {
             `<div class="highlight-box">
               <h4>¿Quieres saber más?<br>
               ¡Visita el repositorio GitHub!<br>
-              🔹 Repositorio: <a href="https://github.com/NicoButter/el_incidente_therac_25"  target="_blank">nibutterfield/therac25-study</a>
+              🔹 Repositorio: <a href="https://github.com/NicoButter/el_incidente_therac_25"  target="_blank">nibutterfield/el_incidente_therac_25</a>
             </h4></div>`
       ],
       images: [{
