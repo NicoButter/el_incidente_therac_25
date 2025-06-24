@@ -306,38 +306,6 @@ export class SlideService {
       ]
     },
     {
-      title: 'Soluciones técnicas implementadas -2',
-      text: '',
-      images: [{
-        url: 'assets/img/soluciones_tecnicas_2.png',
-        caption: 'Soluciones tecnicas - Therac-25 (1983-1987)'
-      }],
-      paragraphs: [
-        `<h3>Soluciones técnicas al fallo del Therac‑25</h3>`,
-
-        `<p>El error del Therac‑25 no se solucionó solo con un cambio de código. Fue necesario un enfoque integral que abordara tanto lo técnico como lo organizativo.</p>`,
-
-        `<h4>Detección del desbordamiento de la variable <code>Class3</code></h4>`,
-        `<p>La variable <mark>Class3</mark> era de solo 1 byte (valores entre 0 y 255). Al superarse ese límite:</p>`,
-        `<ul>
-      <li>Se producía un <em>desbordamiento (overflow)</em></li>
-      <li>La variable volvía a 0</li>
-      <li>El sistema interpretaba esto como “todo verificado” y omitía comprobaciones de seguridad</li>
-    </ul>`,
-        `<p>La solución fue cambiarla a un valor fijo distinto de cero durante el proceso de ajuste, evitando errores silenciosos.</p>`,
-
-        `<h4>Restablecimiento de bloqueos físicos (interlocks)</h4>`,
-        `<p>Se reintrodujeron medidas de seguridad física, como microinterruptores y sistemas redundantes. Así, incluso si fallaba el software, el hardware detenía el disparo del haz.</p>`,
-
-        `<h4>Mejoras en la interfaz y validación de entrada</h4>`,
-        `<p>Se implementaron controles más estrictos para evitar cambios rápidos entre modos sin confirmación explícita, reduciendo condiciones de carrera por edición apresurada.</p>`,
-
-        `<h4>Validación independiente del estado del sistema</h4>`,
-        `<p>Se añadieron rutinas externas que verificaban el estado de los componentes antes de permitir el tratamiento.</p>`
-      ]
-    },
-
-    {
       title: 'Consecuencias Sociales y Económicas',
       text: '',
       images: [{
