@@ -600,7 +600,7 @@ export class SlideService {
             </h4></div>`
       ],
       images: [{
-        url: 'assets/img/angular_logo.png',
+        url: 'assets/img/gracias.png',
         caption: 'Desarrollado con Angular'
       }],
       backgroundUrl: '',
