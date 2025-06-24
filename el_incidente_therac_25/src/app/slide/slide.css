@@ -1,16 +1,13 @@
 .slide {
-
   min-height: 95vh;
   height: auto;
   max-height: none;
   overflow-y: auto;
-
-
   position: relative;
   width: 95vw;
   /* min-height: 90vh;*/
   /* height: 95vh; */
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   color: white;
   background-size: cover;
@@ -38,7 +35,7 @@
 
 /* Título del slide */
 .slide h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 3vw, 2rem);
   margin-top: 0;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   align-self: center;
@@ -52,7 +49,7 @@
   flex-direction: row;
   gap: 2rem;
   flex: 1;
-  margin-top: 2rem;
+  margin-top: 0.3rem;
   flex-wrap: wrap;
 }
 
@@ -62,12 +59,11 @@
 }
 
 .text p {
-  font-size: clamp(1.4em, 4vw, 1.3rem);
-  /* font-size: 1.1rem; */
+  font-size: clamp(1.4rem, 4vw, 1.3rem);
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.2rem;
   border-radius: 6px;
   color: white;
   white-space: pre-line;
@@ -139,7 +135,8 @@
   align-items: center;
   z-index: 9999;
   cursor: zoom-out;
-  overflow: auto; /* Permite scroll suave si la imagen es muy grande */
+  overflow: auto;
+  /* Permite scroll suave si la imagen es muy grande */
 }
 
 .image-overlay img {
@@ -164,6 +161,37 @@
   border-radius: 4px;
 }
 
+.paragraph-animate h2,
+.paragraph-animate h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #3498db;
+}
+
+.paragraph-animate ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.paragraph-animate li {
+  margin-bottom: 0.3rem;
+}
+
+.paragraph-animate strong {
+  color: #f1c40f;
+}
+
+kbd {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 0.95em;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -177,8 +205,55 @@
 }
 
 .paragraph-animate {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* padding: 0.5rem; */
+  border-radius: 8px;
+  /* margin-bottom: 1.5rem; */
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  /* line-height: 1.2; */
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
+}
+
+.paragraph-animate h2,
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  color: #3498db;
+  /* Azul profesional */
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.paragraph-animate strong {
+  color: #f1c40f;
+  /* Amarillo cálido */
+}
+
+.paragraph-animate mark {
+  background-color: #f1c40f;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.paragraph-animate em {
+  color: #bdc3c7;
+  font-style: italic;
+}
+
+.paragraph-animate strong {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+.highlight-box {
+  background-color: rgba(46, 204, 113, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -201,6 +276,7 @@
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 1;
     transform: scale(1);

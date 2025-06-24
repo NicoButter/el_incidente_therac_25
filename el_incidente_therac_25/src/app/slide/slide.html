@@ -15,13 +15,19 @@
   <!-- Párrafos -->
   <ng-container *ngIf="slide.paragraphs && slide.paragraphs.length > 0">
     <ng-container *ngFor="let paragraph of slide.paragraphs; let i = index">
-      <p
+      <!-- <p
         *ngIf="paragraph"
         class="paragraph-animate"
         [style.animation-delay]="'0.' + i + 's'"
       >
         {{ paragraph }}
-      </p>
+      </p> -->
+      <div 
+        *ngIf="paragraph" 
+        class="paragraph-animate" 
+        [innerHTML]="paragraph" 
+        [style.animationDelay]="'0.' + i + 's'"
+      ></div>
     </ng-container>
   </ng-container>
 </div>
